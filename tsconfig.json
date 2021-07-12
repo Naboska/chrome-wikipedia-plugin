@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "moduleResolution": "node",
     "target": "es2017",
     "importsNotUsedAsValues": "error",
     "declaration": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "sourceMap": true,
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
   },
   "include": ["src/**/*"],
   "exclude": ["**/__tests__/**", "**/*.test.ts"]

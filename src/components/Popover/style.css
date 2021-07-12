@@ -1,0 +1,27 @@
+.chrome-wikipedia-plugin-popover_content {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    max-height: 400px;
+    z-index: 100000000;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #000000;
+    border: 2px solid #1f1f1f;
+}
+
+
+.chrome-wikipedia-plugin-popover_icon {
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    padding: 11px;
+    z-index: 100000000;
+    border-radius: 4px;
+    background-size: 23px;
+    background-color: #06a338;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVEhL7dE/DkAwFMdxkzM5mYM4gMUNXMAB2C0Sq60Rk+lHLf60SduHJ5In+S7a5NO+RnGR4IsEZktgtv4F5yP2b66RWva4CobTYTph2yHG0tjnKhDOUM1A2+3/toO8D18r0a4XPh7ENzrc1FBEVEeEzZGHRoT1iCdUjW3Nr5tvTI8G33xfHQ3u+pUF1JDZ1z362agfSGC2BGZLYKYSLOAWi4uE5mVmAAAAAElFTkSuQmCC);
+    cursor: pointer;
+}

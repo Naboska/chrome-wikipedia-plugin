@@ -25,12 +25,6 @@ module.exports = {
       },
     ],
 
-
-    'import/order': ['error', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      'newlines-between': 'always'
-    }],
-
     'no-console': 'warn',
     'no-nested-ternary': 'error',
     'no-debugger': 'warn',
@@ -44,7 +38,6 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
 
-    'sort-imports': ['error', { ignoreDeclarationSort: true }]
-
+    'sort-imports': ['error', { ignoreDeclarationSort: true }],
   },
-}
+};

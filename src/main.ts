@@ -1,7 +1,7 @@
-export const test = 'test';
+import { SearchWidget } from 'widgets';
 
-function c() {
-  console.log(test);
-}
+const main = () => {
+  SearchWidget();
+};
 
-c();
+main();

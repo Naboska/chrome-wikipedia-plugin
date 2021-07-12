@@ -10,6 +10,11 @@ module.exports = {
     filename: 'main.js',
   },
   resolve: {
+    alias: {
+      components: getPath('./src/components'),
+      widgets: getPath('./src/widgets'),
+      lib: getPath('./src/lib'),
+    },
     extensions: ['.js', '.ts'],
   },
   module: {
@@ -27,6 +32,22 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/i,
+        include: [/node_modules/, /src/],
+        use: [
+          {
+            loader: require.resolve("style-loader", { paths: [__dirname] }),
+          },
+          {
+            loader: require.resolve("css-loader", { paths: [__dirname] }),
+            options: {
+              modules: false,
+            },
+          },
+        ],
+      },
+
     ],
   },
   plugins: [
