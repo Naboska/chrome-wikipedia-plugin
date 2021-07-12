@@ -18,7 +18,7 @@ export const Search = ({ findValue }: TSearch) => {
 
     wikiSearchService(findValue)
       .then(result => {
-        result.forEach(wiki => list.appendChild(SearchItem(wiki)));
+        result.forEach((wiki, i) => list.appendChild(SearchItem(wiki, i)));
         content.innerHTML = '';
         content.appendChild(list);
       })
