@@ -1,8 +1,7 @@
 export const test = 'test';
 
-
 function c() {
-  console.log(test)
+  console.log(test);
 }
 
 c();
