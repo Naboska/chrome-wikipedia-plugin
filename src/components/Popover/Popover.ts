@@ -3,7 +3,7 @@ import { PopoverContent, PopoverIcon } from './units';
 
 type TPopover = {
   clientRects: DOMRect;
-  children: () => HTMLElement;
+  children: () => HTMLElement | DocumentFragment;
 };
 
 const stopPropagation = (event: MouseEvent) => event.stopPropagation();

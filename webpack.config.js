@@ -14,6 +14,7 @@ module.exports = {
       components: getPath('./src/components'),
       widgets: getPath('./src/widgets'),
       lib: getPath('./src/lib'),
+      services: getPath('./src/services'),
     },
     extensions: ['.js', '.ts'],
   },

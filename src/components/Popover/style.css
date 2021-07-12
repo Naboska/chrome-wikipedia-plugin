@@ -1,11 +1,12 @@
 .chrome-wikipedia-plugin-popover_content {
+    box-sizing: border-box;
     position: absolute;
     width: 300px;
     height: 300px;
     max-height: 400px;
     z-index: 100000000;
     padding: 20px;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 4px;
     background-color: #f8f8f8;
     color: #000000;
@@ -14,6 +15,7 @@
 
 
 .chrome-wikipedia-plugin-popover_icon {
+    box-sizing: border-box;
     position: absolute;
     height: 19px;
     width: 19px;

@@ -2,7 +2,7 @@ import { createPopper } from '@popperjs/core';
 
 type TPopoverContent = {
   element: HTMLElement;
-  children: HTMLElement;
+  children: HTMLElement | DocumentFragment;
 };
 
 export const PopoverContent = ({ element, children }: TPopoverContent) => {
