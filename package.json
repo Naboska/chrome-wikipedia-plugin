@@ -1,0 +1,62 @@
+{
+  "name": "chrome-wikipedia-plugin",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Dmitry Filatov",
+    "email": "dmitry.st.filatov@gmail.com",
+    "url": "https://github.com/Naboska"
+  },
+  "homepage": "https://github.com/Naboska/chrome-wikipedia-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Naboska/chrome-wikipedia-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/Naboska/chrome-wikipedia-plugin/issues"
+  },
+  "keywords": [
+    "chrome",
+    "chrome plugin",
+    "wikipedia"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "yarn clean && webpack",
+    "clean": "rimraf dist",
+    "lint": "eslint \"./**/*.ts\" --fix",
+    "test": "jest"
+  },
+  "main": "dist/main.js",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-typescript": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint",
+      "yarn test"
+    ]
+  }
+}
